@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    >
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@mipmap/banner_foreground"
+        android:scaleX="1.6"
+        android:scaleY="1.6"
+        android:contentDescription="@string/logo_description"
+        android:visibility="visible" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/banner"
+
+        android:useDefaultMargins="true"
+        android:layout_marginStart="@dimen/icon_size"
+
+        android:columnCount="3"
+        android:rowCount="4"
+        android:alignmentMode="alignBounds"
+        >
+        <Button
+            android:id="@+id/btn_grantAdmin"
+            style="@style/PermissionButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/ask_for_admin_button"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_adminPermissionFeedback"
+            android:layout_width="@dimen/feedback_width"
+            android:layout_height="@dimen/feedback_height"
+            android:text="@string/permission_unknown_feedback"
+            style="@style/PermissionFeedback"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_grantSpecial"
+            style="@style/PermissionButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/ask_for_special_button"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/txt_drawOverPermissionFeedback"
+            android:layout_width="@dimen/feedback_width"
+            android:layout_height="@dimen/feedback_height"
+            android:text="@string/permission_unknown_feedback"
+            style="@style/PermissionFeedback"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_stopService"
+            style="@style/PermissionButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:visibility="gone"
+            android:text="@string/stop_service_button"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+            />
+        <Button
+            android:id="@+id/btn_startService"
+            style="@style/PermissionButton"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/start_service_button"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_gravity="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txt_serviceStatus"
+            style="@style/PermissionFeedback"
+            android:layout_width="@dimen/feedback_width"
+            android:layout_height="@dimen/feedback_height"
+            android:text="@string/permission_unknown_feedback"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_gravity="center"
+            />
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/img_quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:contentDescription="@string/quit_button_description"
+        grid:srcCompat="@drawable/quit" />
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="admin_description">Screen Lock service needs Administrator access to lock the device.</string>
+    <string name="app_name">Screen Lock Service</string>
+
+    <string name="button_allow">Yes</string>
+    <string name="button_deny">No</string>
+    <string name="ask_for_admin_button">Admin Rights</string>
+    <string name="ask_for_special_button">Draw Over Apps Rights</string>
+    <string name="start_service_button">Start Service</string>
+    <string name="stop_service_button">Stop Service</string>
+    <string name="ask_for_all_permissions_button">Request all</string>
+
+    <string name="permission_granted_feedback">GRANTED</string>
+    <string name="running_feedback">RUNNING</string>
+    <string name="permission_denied_feedback">DENIED</string>
+    <string name="stopped_feedback">STOPPED</string>
+    <string name="permission_permanently_denied_feedback">PERMANENTLY DENIED</string>
+    <string name="permission_unknown_feedback">UNKNOWN</string>
+    <string name="camera_permission_denied_feedback">Admin rights are needed for service to start</string>
+    <string name="contacts_permission_denied_feedback">Draw over app rights are needed for service to start</string>
+
+    <string name="something_went_wrong">Something went wrong</string>
+    <string name="service_started">Service Started!</string>
+    <string name="service_running">Service Running</string>
+    <string name="stopping_service_failed">Stopping service failed!</string>
+
+    <string name="needs_administrator_rights">Application needs administrator rights to lock the screen.</string>
+    <string name="needs_draw_over_apps">This Service needs draw over apps permissions to work.</string>
+    <string name="error_when_starting_the_service">Error when starting the service, check permissions!</string>
+    <string name="quit_button_description">Quit Button</string>
+    <string name="logo_description">Logo</string>
+    <string name="number_of_external_displays_connected">Number of external displays connected: </string>
+    <string name="no_external_displays_connected">No external displays connected</string>
+    <string name="service_is_running"> service is running. </string>
+</resources>
